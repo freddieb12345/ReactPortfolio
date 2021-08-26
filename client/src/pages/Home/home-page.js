@@ -4,6 +4,7 @@ import PropTypes from 'prop-types'
 import "../../index.css"
 import Nav from "../../components/navbar/navbar"
 import Hero from "../../components/hero/hero"
+import Bio from "../../components/bio/bio"
 
 import {
   Segment,
@@ -43,7 +44,9 @@ class DesktopContainer extends Component {
             style={{padding: '5em 0em', backgroundColor: "#fff" }}
             vertical
           >
+            <Nav />
             <Hero/>
+            <Bio/>
           </Segment>
         </Visibility>
 
@@ -81,12 +84,11 @@ class MobileContainer extends Component {
       <Media as={Sidebar.Pushable} at="mobile">
 
         <Segment
-          inverted
-          textAlign="center"
           style={{ padding: "5em 0vw",  backgroundColor: "#fff" }}
-          vertical
         >
+          <Nav />
           <Hero/>
+          <Bio/>
         </Segment>
 
         {children}
@@ -116,9 +118,7 @@ ResponsiveContainer.propTypes = {
 const Home = () => {
   return (
     <div>
-      <ResponsiveContainer>
-        <Nav />
-      </ResponsiveContainer>
+      <ResponsiveContainer/>
     </div>
   );
 };

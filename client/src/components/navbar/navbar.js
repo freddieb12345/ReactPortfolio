@@ -6,6 +6,8 @@ import Button from '@material-ui/core/Button';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import useScrollTrigger from '@material-ui/core/useScrollTrigger';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import IconButton from '@material-ui/core/IconButton';
+
 
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 
@@ -83,8 +85,12 @@ export default function NavBar(props) {
                   <Button color="inherit" href='/' style={{fontSize: "150%"}}>Experience</Button>
                   <Button color="inherit" href='/' style={{fontSize: "150%"}}>Latest Projects</Button>
                   <div className={classes.grow} />
-                  <FontAwesomeIcon icon={faGithub} style={{ margin: "1em" }} className="fa-2x" />
-                  <FontAwesomeIcon icon={faLinkedin} style={{ margin: "1em" }} className="fa-2x" />
+                  <IconButton aria-label="delete" className={classes.margin} size="small" href="https://github.com/freddieb12345" target="_blank">
+                    <FontAwesomeIcon icon={faGithub} style={{ margin: "1em" }} className="fa-2x" />    
+                  </IconButton>
+                  <IconButton aria-label="delete" className={classes.margin} size="small" href="https://www.linkedin.com/in/freddiebrewin/" target="_blank">
+                    <FontAwesomeIcon icon={faLinkedin} style={{ margin: "1em" }} className="fa-2x" />    
+                  </IconButton>
                 </Toolbar>
               </AppBar>
           </div>
@@ -95,8 +101,12 @@ export default function NavBar(props) {
                   <Button color="inherit" href='/' style={{fontSize: "1.5vw", width: "auto"}}>Experience</Button>
                   <Button color="inherit" href='/' style={{fontSize: "1.5vw", width: "auto"}}>Latest Projects</Button>
                   <div className={classes.grow} />
-                  <FontAwesomeIcon icon={faGithub} style={{ margin: "1em" }} className="fa-2x" />
-                  <FontAwesomeIcon icon={faLinkedin} style={{ margin: "1em" }} className="fa-2x" />
+                  <IconButton aria-label="delete" className={classes.margin} size="small">
+                    <FontAwesomeIcon icon={faGithub} style={{ margin: "1em" }} className="fa-2x" />    
+                  </IconButton>
+                  <IconButton aria-label="delete" className={classes.margin} size="small">
+                    <FontAwesomeIcon icon={faLinkedin} style={{ margin: "1em" }} className="fa-2x" href="https://www.linkedin.com/in/freddiebrewin/"/>    
+                  </IconButton>
                 </Toolbar>
               </AppBar>
           </div>
