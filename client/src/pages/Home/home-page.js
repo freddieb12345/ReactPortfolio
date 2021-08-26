@@ -2,12 +2,10 @@ import React, { Component } from 'react'
 import { createMedia } from '@artsy/fresnel'
 import PropTypes from 'prop-types'
 import "../../index.css"
+import Nav from "../../components/navbar/navbar"
+import Hero from "../../components/hero/hero"
 
 import {
-  Button,
-  Container,
-  Header,
-  Icon,
   Segment,
   Sidebar,
   Visibility,
@@ -22,41 +20,6 @@ const { MediaContextProvider, Media } = createMedia({
   },
 })
 
-const HomepageHeading = ({ mobile }) => (
-  <Container text>
-    <Header
-      as='h1'
-      content='Outgrown'
-      inverted
-      style={{
-        fontSize: mobile ? '2em' : '4em',
-        fontWeight: 'normal',
-        marginBottom: 0,
-        marginTop: mobile ? '1.5em' : '3em',
-        paddingTop: 30
-      }}
-    />
-    <Header
-      as='h2'
-      content='Do whatever you want when you want to.'
-      inverted
-      style={{
-        fontSize: mobile ? '1.5em' : '1.7em',
-        fontWeight: 'normal',
-        marginTop: mobile ? '0.5em' : '1.5em',
-        marginBottom: '1.0em',
-      }}
-    />
-    <Button inverted color="red" size='huge' href="/marketplace">
-
-      <Icon name='shopping bag' /> Shop Now
-    </Button>
-  </Container>
-)
-
-HomepageHeading.propTypes = {
-  mobile: PropTypes.bool,
-}
 
 class DesktopContainer extends Component {
   state = {}
@@ -76,12 +39,11 @@ class DesktopContainer extends Component {
           onBottomPassedReverse={this.hideFixedMenu}
         >
           <Segment
-            inverted
             textAlign='center'
-            style={{ minHeight: 700, padding: '1em 0em' }}
+            style={{padding: '5em 0em', backgroundColor: "#fff" }}
             vertical
           >
-            <HomepageHeading />
+            <Hero/>
           </Segment>
         </Visibility>
 
@@ -121,10 +83,10 @@ class MobileContainer extends Component {
         <Segment
           inverted
           textAlign="center"
-          style={{ minHeight: 350, padding: "1em 0em" }}
+          style={{ padding: "5em 0vw",  backgroundColor: "#fff" }}
           vertical
         >
-          <HomepageHeading mobile />
+          <Hero/>
         </Segment>
 
         {children}
@@ -155,12 +117,7 @@ const Home = () => {
   return (
     <div>
       <ResponsiveContainer>
-        <Grid stackable columns={2} style={{ padding: '3em 0em' }} vertical className="DPP">
-          <Grid.Column centered width={8}>
-          </Grid.Column>
-          <Grid.Column centered width={8}>
-          </Grid.Column>
-        </Grid>
+        <Nav />
       </ResponsiveContainer>
     </div>
   );
