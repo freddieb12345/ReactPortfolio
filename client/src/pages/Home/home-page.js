@@ -5,6 +5,8 @@ import "../../index.css"
 import Nav from "../../components/navbar/navbar"
 import Hero from "../../components/hero/hero"
 import Bio from "../../components/bio/bio"
+import Technologies from "../../components/tech/tech"
+import { Divider } from 'semantic-ui-react'
 
 import {
   Segment,
@@ -42,11 +44,13 @@ class DesktopContainer extends Component {
           <Segment
             textAlign='center'
             style={{padding: '5em 0em', backgroundColor: "#fff" }}
-            vertical
+            
           >
             <Nav />
             <Hero/>
             <Bio/>
+            <Divider  style={{maxWidth:"1000px", marginLeft:"auto",  marginRight:"auto", marginTop:"50px"}}/>
+            <Technologies/>
           </Segment>
         </Visibility>
 
@@ -84,11 +88,14 @@ class MobileContainer extends Component {
       <Media as={Sidebar.Pushable} at="mobile">
 
         <Segment
+          textAlign='center'
           style={{ padding: "5em 0vw",  backgroundColor: "#fff" }}
         >
           <Nav />
           <Hero/>
           <Bio/>
+          <Divider  style={{maxWidth:"1000px", margin:"auto",}}/>
+          <Technologies/>
         </Segment>
 
         {children}
