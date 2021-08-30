@@ -7,8 +7,9 @@ import CssBaseline from '@material-ui/core/CssBaseline';
 import useScrollTrigger from '@material-ui/core/useScrollTrigger';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import IconButton from '@material-ui/core/IconButton';
-
-
+import NavLogo from '../../assets/NavLogo.PNG'
+import { Image } from 'semantic-ui-react'
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 
 const useStyles = makeStyles((theme) => ({
@@ -85,11 +86,16 @@ export default function NavBar(props) {
                   <Button color="inherit" href='/' style={{fontSize: "150%"}}>Experience</Button>
                   <Button color="inherit" href='/' style={{fontSize: "150%"}}>Latest Projects</Button>
                   <div className={classes.grow} />
+                    <Image src={NavLogo} size="tiny" href="/" />
+                  <div className={classes.grow} />
                   <IconButton aria-label="delete" className={classes.margin} size="small" href="https://github.com/freddieb12345" target="_blank">
                     <FontAwesomeIcon icon={faGithub} style={{ margin: "1em" }} className="fa-2x" />    
                   </IconButton>
                   <IconButton aria-label="delete" className={classes.margin} size="small" href="https://www.linkedin.com/in/freddiebrewin/" target="_blank">
                     <FontAwesomeIcon icon={faLinkedin} style={{ margin: "1em" }} className="fa-2x" />    
+                  </IconButton>
+                  <IconButton aria-label="delete" size="small" href="mailto:freddiebrewin@live.com">
+                    <FontAwesomeIcon icon={faEnvelope} style={{ margin: "1em" }} className="fa-2x" />
                   </IconButton>
                 </Toolbar>
               </AppBar>
@@ -102,10 +108,13 @@ export default function NavBar(props) {
                   <Button color="inherit" href='/' style={{fontSize: "1.5vw", width: "auto"}}>Latest Projects</Button>
                   <div className={classes.grow} />
                   <IconButton aria-label="delete" className={classes.margin} size="small">
-                    <FontAwesomeIcon icon={faGithub} style={{ margin: "1em" }} className="fa-2x" />    
+                    <FontAwesomeIcon icon={faGithub} si style={{ margin: "1vw" }} className="fa-2x" />    
                   </IconButton>
                   <IconButton aria-label="delete" className={classes.margin} size="small">
-                    <FontAwesomeIcon icon={faLinkedin} style={{ margin: "1em" }} className="fa-2x" href="https://www.linkedin.com/in/freddiebrewin/"/>    
+                    <FontAwesomeIcon icon={faLinkedin} style={{ margin: "1vw" }} className="fa-2x" href="https://www.linkedin.com/in/freddiebrewin/"/>    
+                  </IconButton>
+                  <IconButton aria-label="delete" size="small" href="mailto:freddiebrewin@live.com">
+                    <FontAwesomeIcon icon={faEnvelope} style={{ margin: "1vw" }} className="fa-2x" />
                   </IconButton>
                 </Toolbar>
               </AppBar>

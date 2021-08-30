@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 
 mongoose.connect(
   process.env.MONGODB_URI || 
-  'mongodb://localhost/outgrown', {
+  'mongodb://localhost/portfolio', {
 
   useNewUrlParser: true,
   useUnifiedTopology: true,

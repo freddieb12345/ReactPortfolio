@@ -6,6 +6,7 @@ import Nav from "../../components/navbar/navbar"
 import Hero from "../../components/hero/hero"
 import Bio from "../../components/bio/bio"
 import Technologies from "../../components/tech/tech"
+import Projects from "../../components/projects/projects"
 import { Divider } from 'semantic-ui-react'
 
 import {
@@ -51,6 +52,8 @@ class DesktopContainer extends Component {
             <Bio/>
             <Divider  style={{maxWidth:"1000px", marginLeft:"auto",  marginRight:"auto", marginTop:"50px"}}/>
             <Technologies/>
+            <Divider  style={{maxWidth:"1000px", margin:"auto", marginRight:"auto", marginTop:"50px"}}/>
+            <Projects/>
           </Segment>
         </Visibility>
 
@@ -96,6 +99,8 @@ class MobileContainer extends Component {
           <Bio/>
           <Divider  style={{maxWidth:"1000px", margin:"auto",}}/>
           <Technologies/>
+          <Divider  style={{maxWidth:"1000px", margin:"auto",}}/>
+          <Projects/>
         </Segment>
 
         {children}
