@@ -86,7 +86,7 @@ export default function NavBar(props) {
                   <Button color="inherit" href='/' style={{fontSize: "150%"}}>Experience</Button>
                   <Button color="inherit" href='/' style={{fontSize: "150%"}}>Latest Projects</Button>
                   <div className={classes.grow} />
-                    <Image src={NavLogo} size="tiny" href="/" />
+                    <Image src={NavLogo} size="tiny" href="/" style={{marginLeft:"2.5vw"}}/>
                   <div className={classes.grow} />
                   <IconButton aria-label="delete" className={classes.margin} size="small" href="https://github.com/freddieb12345" target="_blank">
                     <FontAwesomeIcon icon={faGithub} style={{ margin: "1em" }} className="fa-2x" />    
