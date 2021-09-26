@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import { createMedia } from '@artsy/fresnel'
 import PropTypes from 'prop-types'
-import "../../index.css"
 import Nav from "../../components/navbar/navbar"
 import Hero from "../../components/hero/hero"
 import Bio from "../../components/bio/bio"
@@ -42,19 +41,15 @@ class DesktopContainer extends Component {
           onBottomPassed={this.showFixedMenu}
           onBottomPassedReverse={this.hideFixedMenu}
         >
-          <Segment
-            textAlign='center'
-            style={{padding: '5em 0em', backgroundColor: "#fff" }}
-            
-          >
             <Nav />
             <Hero/>
-            <Bio/>
             <Divider  style={{maxWidth:"1000px", marginLeft:"auto",  marginRight:"auto", marginTop:"50px"}}/>
+            <Projects/>
+            {/* <Bio/>
+            
             <Technologies/>
             <Divider  style={{maxWidth:"1000px", margin:"auto", marginRight:"auto", marginTop:"50px"}}/>
-            <Projects/>
-          </Segment>
+             */}
         </Visibility>
 
         {children}

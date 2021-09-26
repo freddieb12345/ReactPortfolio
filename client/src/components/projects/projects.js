@@ -1,37 +1,46 @@
 import React from 'react'
-import { Grid, Segment } from 'semantic-ui-react'
-import Button from '@material-ui/core/Button';
-import IconButton from '@material-ui/core/IconButton';
-import { faEnvelope, faMobile } from '@fortawesome/free-solid-svg-icons'
-import { faGithub, faLinkedin, faHtml5, faCss3Alt, faNode, faJs, faNpm, faBootstrap, faReact, faMdb, faStripe } from '@fortawesome/free-brands-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import MaterialUILogo from '../../assets/materialUILogo.png'
-import { Image } from 'semantic-ui-react'
-import { Header } from 'semantic-ui-react'
-import BudgetTrackerLogo from '../../assets/budgetTrackerLogo.PNG'
-import FitnessTrackerLogo from '../../assets/fitnessTracker.PNG'
-import OutgrownLogo from '../../assets/outgrown-logo.png'
+import styles from './projects.css'
+
 
 const Projects = () => (
     <div>
-        <Header.Subheader style={{ fontSize: "2vw", padding:"0.5em" }}> Recent Projects </Header.Subheader>
-        <Grid columns='equal'>
-            <Grid.Row>
-                <Grid.Column style ={{margin:"auto"}}>
-                    <Image src={OutgrownLogo} href="https://outgrown-app.herokuapp.com/" target="_blank"/>
-                </Grid.Column>
+        <h1 class="projects">Recent Projects</h1>
+        <section class="section2">
+            
+            <div class="container2">
+                <div class = "box2">
+                    <span></span>
+                    <div class = "content2">
+                        <h2>Outgrown</h2>
+                        <p>E-commerce app that allows parents to buy used baby items or sell any items they have that are going unused.</p>
+                        <a href="https://outgrown-app.herokuapp.com/" target="__blank">See deployed app here</a>
+                        <a href="https://github.com/wa20/outgrown" target="__blank">See github repo here</a> 
+                    </div>
+                </div>
 
-                <Grid.Column style ={{margin:"auto"}}>
-                    <Image src={BudgetTrackerLogo} href="https://stark-woodland-99025.herokuapp.com/?id=6123ccd49fa2ee0016fed818" target="_blank"/>
-                </Grid.Column>
+                <div class = "box2">
+                    <span></span>
+                    <div class = "content2">
+                        <h2>Budget Tracker</h2>
+                        <p>App that allows users to track their budget.Users input their funds and purchases and the app displays all this data in a graph</p>
+                        <a href="https://frozen-tundra-37761.herokuapp.com/" target="__blank">See deployed app here</a> 
+                        <a href="https://github.com/freddieb12345/BudgetTracker" target="__blank">See github repo here</a> 
+                    </div>
+                </div>
 
-                <Grid.Column style ={{margin:"auto"}}>
-                    <Image src={FitnessTrackerLogo} href="https://frozen-tundra-37761.herokuapp.com/" target="_blank"/>
-                </Grid.Column>
-            </Grid.Row>
-        </Grid>
+                <div class = "box2">
+                    <span></span>
+                    <div class = "content2">
+                        <h2>Fitness Tracker</h2>
+                        <p>App that allows users to plan and track their workouts by allowing them to input all their data from a workout. The app then displays all this data in various graphs</p>
+                        <a href="https://stark-woodland-99025.herokuapp.com/?id=6123ccd49fa2ee0016fed818" target="__blank">See deployed app here</a>
+                        <a href="https://github.com/freddieb12345/FitnessTracker" target="__blank">See github repo here</a>  
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr class="rounded"></hr>
     </div>
-
 
 )
 
