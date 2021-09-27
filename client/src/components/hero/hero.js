@@ -4,6 +4,7 @@ import styles from './hero.css'
 
 const Hero = () => (
   <div>
+    <h1 class ="heroHeader">Welcome to my Portfolio</h1>
     <section className="section">
       <div class="container">
         <div class ="card">
@@ -23,7 +24,7 @@ const Hero = () => (
         </div>
       </div>
     </section>
-    <hr class="rounded"></hr>
+    {/* <hr class="rounded"></hr> */}
   </div>
   )
   

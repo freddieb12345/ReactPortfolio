@@ -3,8 +3,8 @@ import styles from './projects.css'
 
 
 const Projects = () => (
-    <div>
-        <h1 class="projects">Recent Projects</h1>
+    <div class ="projects">
+        <h1 class="projectsheader">Recent Projects</h1>
         <section class="section2">
             
             <div class="container2">
@@ -39,7 +39,7 @@ const Projects = () => (
                 </div>
             </div>
         </section>
-        <hr class="rounded"></hr>
+        {/* <hr class="rounded"></hr> */}
     </div>
 
 )
