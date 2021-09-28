@@ -1,11 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
 
-.projects {
-    background-color: rgba(124, 124, 124, 0.774);
+.list {
+    margin: 0;
+}
+
+.education {
+    background-color: #fff;
     
 }
 
-.projectsheader{
+.educationHeader{
     display: flex;
     display: flex;
     justify-content: center;
@@ -16,26 +20,28 @@
     margin-top: 0 !important;
     margin-bottom: 0 !important;
 }
-.section2{
+.section3{
     box-sizing: border-box;
     font-family: 'Raleway', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
     align-items: center;
+    background: #fff;
 }
 
-.container2 {
+.container3 {
     display:flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    height: auto;
 }
 
-.container2 .box2 {
+.container3 .box3 {
     position: relative;
     width: 320px;
-    height: 400px;
+    height: 550px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -43,7 +49,7 @@
     transition: 0.5s;
 }
 
-.container2 .box2::before {
+.container3 .box3::before {
     content: '';
     position:absolute;
     top:0;
@@ -55,7 +61,7 @@
     transition: 0.5s;
 }
 
-.container2 .box2::after {
+.container3 .box3::after {
     content: '';
     position:absolute;
     top:0;
@@ -69,30 +75,30 @@
     transition: 0.5s;
 }
 
-.container2 .box2:hover:before,
-.container2 .box2:hover:after {
+.container3 .box3:hover:before,
+.container3 .box3:hover:after {
     transform: skewX(0deg);
     width: calc(100% - 90px);
 }
 
-.container2 .box2:nth-child(1):before,
-.container2 .box2:nth-child(1):after {
+.container3 .box3:nth-child(1):before,
+.container3 .box3:nth-child(1):after {
     background: linear-gradient(315deg, #1a1a1d,#79797c );
     transform: skewX(15deg);
 }
 
-.container2 .box2:nth-child(2):before,
-.container2 .box2:nth-child(2):after {
+.container3 .box3:nth-child(2):before,
+.container3 .box3:nth-child(2):after {
     background: linear-gradient(315deg, #1a1a1d,#79797c );
 }
 
-.container2 .box2:nth-child(3):before,
-.container2 .box2:nth-child(3):after {
+.container3 .box3:nth-child(3):before,
+.container3 .box3:nth-child(3):after {
     background: linear-gradient(315deg, #1a1a1d,#79797c );
     transform: skewX(-15deg);
 }
 
-.container2 .box2 span {
+.container3 .box3 span {
     display: block;
     position: absolute;
     top: 0;
@@ -103,7 +109,7 @@
     pointer-events: none;
 }
 
-.container2 .box2 span::before {
+.container3 .box3 span::before {
     content: '';
     position: absolute;
     top: 0;
@@ -120,7 +126,7 @@
 }
 
 
-.container2 .box2:hover span::before {
+.container3 .box3:hover span::before {
     top: -50px;
     left: 50px;
     width: 100px;
@@ -129,7 +135,7 @@
 }
 
 
-.container2 .box2 span::after {
+.container3 .box3 span::after {
     content: '';
     position: absolute;
     bottom: 0;
@@ -146,7 +152,7 @@
 }
 
 
-.container2 .box2:hover span::after {
+.container3 .box3:hover span::after {
     bottom: -50px;
     right: 50px;
     width: 100px;
@@ -164,11 +170,11 @@
         transform: translateY(-10px);
     }
 }
-.content2 {
+.content3 {
     z-index: 1;
     position: relative;
     left: 0;
-    padding: 20px 40px;
+    padding: 0px 40px 20px 40px;
     background: rgba(255, 255, 255, 0.1);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
@@ -177,25 +183,26 @@
     color: #111;
 }
 
-.container2 .box2:hover .content2
+.container3 .box3:hover .content3
 {
     left: -25px;
     padding: 60px 40px;
 }
 
-.container2 .box2 .content2 h2 {
+.container3 .box3 .content3 h2 {
     font-size: 2em;
     color: #111;
     margin-bottom: 10px;
 }
 
-.container2 .box2 .content2 p {
+.container3 .box3 .content3 p {
     font-size:  1.1em;
-    margin-bottom: 10px;
+    margin: 0px;
     line-height: 1.4em;
+    
 }
 
-.container2 .box2 .content2 a {
+.container3 .box3 .content3 a {
     display: inline-block;
     font-size:  1.1em;
     color: #111;
@@ -214,3 +221,121 @@ hr.rounded {
     border-radius: 5px;
     width: 90%;
 }
+
+
+/* .section3 {
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+}
+
+.container3 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
+    flex-wrap: wrap;
+}
+
+.container3 .box3 {
+    position: relative;
+    width: 320px;
+    height: 400px;
+    color: #fff;
+    background: #111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 30px;
+    transition: 0.5s;
+}
+
+.container3 .box3:hover {
+    transform: translateY(-20px);
+}
+
+.container3 .box3::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #ffbc00, #ff0058);
+}
+
+.container3 .box3::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #ffbc00, #ff0058);
+    filter:blur(30px)
+}
+
+.container3 .box3:nth-child(2)::before,
+.container3 .box3:nth-child(2)::after {
+    background: linear-gradient(45deg, #ffbc00, #ff0058);
+}
+
+.container3 .box3:nth-child(3)::before,
+.container3 .box3:nth-child(3)::after {
+    background: linear-gradient(45deg, #ffbc00, #ff0058);
+}
+
+.container3 .box3 span {
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    right: 6px;
+    bottom: 6px;
+    background: rgba(0,0,0,0.6);
+    z-index: 2;
+}
+
+.container3 .box3 span::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: rgba(255,255,255,0.1);
+    pointer-events: none;
+}
+
+.container3 .box3 .content3 {
+    position: relative;
+    z-index: 10;
+    padding: 20px 40px;
+}
+
+.container3 .box3 .content3 h2{
+    font-size: 2em;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.container3 .box3 .content3 p{
+    font-size: 1.1em;
+    color: #fff;
+    margin-bottom: 10px;
+    line-height: 1.4em;
+}
+
+.container3 .box3 .content3 a {
+    display: inline-block;
+    font-size: 1.1em;
+    color: #111;
+    background: #fff;
+    padding: 10px;
+    font-weight: 700;
+    text-decoration: none;
+} */

@@ -3,7 +3,7 @@ import styles from './projects.css'
 
 
 const Projects = () => (
-    <div class ="projects">
+    <div class ="projects" id="projects">
         <h1 class="projectsheader">Recent Projects</h1>
         <section class="section2">
             

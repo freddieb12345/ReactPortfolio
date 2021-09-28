@@ -11,6 +11,7 @@ import NavLogo from '../../assets/NavLogo.PNG'
 import { Image } from 'semantic-ui-react'
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
+import { HashLink as Link } from 'react-router-hash-link';
 import './navbar.css'
 
 const useStyles = makeStyles((theme) => ({
@@ -83,9 +84,9 @@ export default function NavBar(props) {
           <div className={classes.sectionDesktop}>
             <AppBar color='white'>
                 <Toolbar>
-                  <Button color="inherit" href="/" style={{fontSize: "1em", width: "auto"}} >Technologies</Button>
-                  <Button color="inherit" href='/' style={{fontSize: "1em", width: "auto"}}>Experience</Button>
-                  <Button color="inherit" href='/' style={{fontSize: "1em", width: "auto"}}>Latest Projects</Button>
+                  <Button color="inherit" href="/home-page#tech" style={{fontSize: "1em", width: "auto"}} >Technologies</Button>
+                  <Button color="inherit" href='/home-page#education' style={{fontSize: "1em", width: "auto"}}>Experience</Button>
+                  <Button color="inherit" href='/home-page#projects' style={{fontSize: "1em", width: "auto"}}>Latest Projects</Button>
                   <div className={classes.grow} />
                   <IconButton aria-label="delete" className={classes.margin} size="small" href="https://github.com/freddieb12345" target="_blank">
                     <FontAwesomeIcon icon={faGithub} style={{ margin: "1vw" }} className="fa-2x" />    

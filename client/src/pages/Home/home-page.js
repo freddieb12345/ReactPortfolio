@@ -3,16 +3,14 @@ import { createMedia } from '@artsy/fresnel'
 import PropTypes from 'prop-types'
 import Nav from "../../components/navbar/navbar"
 import Hero from "../../components/hero/hero"
-import Bio from "../../components/bio/bio"
 import Technologies from "../../components/tech/tech"
 import Projects from "../../components/projects/projects"
-import { Divider } from 'semantic-ui-react'
+import Education from "../../components/education/education"
 
 import {
   Segment,
   Sidebar,
   Visibility,
-  Grid,
 } from 'semantic-ui-react'
 
 const { MediaContextProvider, Media } = createMedia({
@@ -43,13 +41,9 @@ class DesktopContainer extends Component {
         >
             <Nav />
             <Hero/>
-            <Divider  style={{maxWidth:"1000px", marginLeft:"auto",  marginRight:"auto", marginTop:"50px"}}/>
             <Projects/>
-            {/* <Bio/>
-            
+            <Education/>
             <Technologies/>
-            <Divider  style={{maxWidth:"1000px", margin:"auto", marginRight:"auto", marginTop:"50px"}}/>
-             */}
         </Visibility>
 
         {children}
@@ -89,13 +83,11 @@ class MobileContainer extends Component {
           textAlign='center'
           style={{ padding: "5em 0vw",  backgroundColor: "#fff" }}
         >
-          <Nav />
-          <Hero/>
-          <Bio/>
-          <Divider  style={{maxWidth:"1000px", margin:"auto",}}/>
-          <Technologies/>
-          <Divider  style={{maxWidth:"1000px", margin:"auto",}}/>
-          <Projects/>
+            <Nav />
+            <Hero/>
+            <Projects/>
+            <Education/>
+            <Technologies/>
         </Segment>
 
         {children}
