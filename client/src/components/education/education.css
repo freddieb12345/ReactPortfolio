@@ -2,6 +2,8 @@
 
 .list {
     margin: 0;
+    color: #000;
+    font-weight: 600;
 }
 
 .education {
@@ -199,7 +201,8 @@
     font-size:  1.1em;
     margin: 0px;
     line-height: 1.4em;
-    
+    color: #000;
+    font-weight: 600;
 }
 
 .container3 .box3 .content3 a {

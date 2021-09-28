@@ -193,6 +193,8 @@
     font-size:  1.1em;
     margin-bottom: 10px;
     line-height: 1.4em;
+    color: #000;
+    font-weight: 600;
 }
 
 .container2 .box2 .content2 a {
